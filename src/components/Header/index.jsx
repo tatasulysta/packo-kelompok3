@@ -21,7 +21,7 @@ function Header(props) {
         </div>
         <div className={styles['right-side']}>
           <Kart />
-          <Button>Login or Sigin</Button>
+          <Button>Login or Signin</Button>
         </div>
       </div>
       {props.children}
