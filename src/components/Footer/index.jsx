@@ -22,23 +22,25 @@ const Footer = () => {
             <p className="text-3xl text-weight-medium mb-3">
               Pemadam kelaparan ketika kamu mager keluar rumah
             </p>
-            <p className={`${styles['mb-56']} text-base`}>
+            <p className={`${styles['mb-56']} text-base text-weight-regular`}>
               Scelerisque platea pulvinar neque egestas et vivamus praesent porttitor libero.
             </p>
 
-            <ul className={'list-unstyled d-flex gap-4 text-xs'}>
-              <li>© 2022 Packo</li>
-              <li>
-                <Link to="/privacy" className={styles['footer-link']}>
-                  Privacy policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/term" className={styles['footer-link']}>
-                  Terms of service
-                </Link>
-              </li>
-            </ul>
+            <nav>
+              <ul className={'list-unstyled d-flex gap-4 text-xs'}>
+                <li>© 2022 Packo</li>
+                <li>
+                  <Link to="/privacy" className={styles['footer-link']}>
+                    Privacy policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/term" className={styles['footer-link']}>
+                    Terms of service
+                  </Link>
+                </li>
+              </ul>
+            </nav>
           </Col>
           <Col className="d-flex flex-column align-items-md-end align-items-start justify-content-center mt-md-0 mt-4">
             <div className={styles['footer-app']}>
