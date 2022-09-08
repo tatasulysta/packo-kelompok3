@@ -2,6 +2,7 @@ body {
   font-family: 'Inter';
   font-style: normal;
 }
+
 :root{
   --brand-yellow:#E9AF53;
   --brand-purple:#4B3786;
@@ -56,3 +57,7 @@ body {
   font-weight: 700;
 }
 
+main.menu {
+  margin-right: 120px;
+  margin-left: 120px;
+}

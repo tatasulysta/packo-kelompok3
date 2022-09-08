@@ -1,0 +1,21 @@
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.card {
+    width: 389.33px;
+    padding: 16px;
+}
+
+.card-text.title {
+    height: 40px;
+}
+
+button.add-food {
+    background: url('../../../public/menu/icon-add.png');
+    width: 40px;
+    height: 40px;
+    border: none;
+}
