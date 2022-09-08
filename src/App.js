@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RecommendedFoodCard from './components/FoodCard/RecommendedFoodCard';
 import PorridgeMenuCard from './components/FoodCard/PorridgeMenuCard';
 import RiceMenuCard from './components/FoodCard/RiceMenuCard';
+import ChickenNoodleMenuCard from './components/FoodCard/ChickenNoodleMenuCard';
 import { Row } from 'react-bootstrap';
 
 function App() {
@@ -32,8 +33,12 @@ function App() {
           <PorridgeMenuCard/>
         </Row>
         <Row>
-          <p className='text-2xl text-weight-medium p-0 mt-5'>Nasi</p>
+          <p className='text-2xl text-weight-medium p-0 mt-4'>Nasi</p>
           <RiceMenuCard/>
+        </Row>
+        <Row>
+          <p className='text-2xl text-weight-medium p-0 mt-4'>Mi Ayam</p>
+          <ChickenNoodleMenuCard/>
         </Row>
       </main>
     </div>

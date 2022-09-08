@@ -77,10 +77,40 @@ const riceMenu = [
     }
 ];
 
+const chickenNoodleMenus = [
+    {
+        imgUrl: '/menu/chicken_noodle/mi-ayam.png',
+        name: 'Mi Ayam',
+        price: 25000
+    },
+    {
+        imgUrl: '/menu/chicken_noodle/mi-ayam-telor-orak-arik.png',
+        name: 'Mi Ayam Telor Orak Arik',
+        price: 28000
+    },
+    {
+        imgUrl: '/menu/chicken_noodle/mi-ayam-telur.png',
+        name: 'Mi Ayam Telur',
+        price: 30000
+    },
+    {
+        imgUrl: '/menu/chicken_noodle/mi-ayam-telor-orak-arik.png',
+        name: 'Mi Ayam Telor Orak Arik',
+        price: 28000
+    },
+    {
+        imgUrl: '/menu/chicken_noodle/mi-ayam-ceker.png',
+        name: 'Mi Ayam Ceker',
+        price: 28000
+    }
+];
+
+
 const menu = {
     foodRecommendations,
     buburMenu,
-    riceMenu
+    riceMenu,
+    chickenNoodleMenus
 }
 
 export default menu;
