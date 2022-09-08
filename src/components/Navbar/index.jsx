@@ -3,7 +3,7 @@ import { navItem } from '../../utils/navItem';
 import NavTab from '../NavTab';
 import styles from './styles.module.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav className={styles.navbar}>
       <ul>

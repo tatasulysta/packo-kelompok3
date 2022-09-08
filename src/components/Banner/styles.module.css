@@ -1,11 +1,20 @@
-.wrapper {
-  width: 100%;
-  background-color: blue;
-}
+
 .container {
   padding: 40px 120px;
   display: flex;
   flex-direction: column;
+}
+.container:hover>.wrapper{
+  visibility: visible;
+  opacity: 1;
+  height: fit-content;
+}
+.wrapper{
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: fit-content 0.3s ease-in;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 .title,.rate {
   margin-top: 40px;

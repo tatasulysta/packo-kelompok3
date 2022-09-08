@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FiChevronDown } from 'react-icons/fi';
 
 import styles from './styles.module.css';
@@ -11,10 +11,18 @@ import TimeInformation from '../TimeInformation';
 import { Col, Container, Row } from 'react-bootstrap';
 
 const Banner = () => {
+  const [hover, setHover] = useState(false);
+  useEffect(() => {
+    console.log(hover);
+  }, [hover]);
   return (
-    <header className={styles.container}>
+    <div
+      className={styles.container}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}>
       <Breadcrumbs />
-      <Container>
+      {/* {hover && ( */}
+      <Container className={styles.wrapper}>
         <Row className="d-flex justify-content-end">
           <Col>
             <h1 className={`text-4xl text-weight-bold ${styles.title}`}>Bubur Yoyong</h1>
@@ -37,8 +45,9 @@ const Banner = () => {
           <Rating className={styles.rate} />
         </Row>
       </Container>
+      {/* )} */}
       <Navbar />
-    </header>
+    </div>
   );
 };
 
