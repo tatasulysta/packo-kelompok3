@@ -6,22 +6,25 @@ import Kart from '../UI/Kart';
 
 function Header(props) {
   return (
-    <header className={styles.header}>
-      <div className={styles.side}>
-        <img src="packo-log.svg" alt="Packo Logo" className={styles.packo} />
-        <form className={styles.form}>
-          <img src="location.svg" alt="Location Icon" className={styles.icon} />
-          <input
-            placeholder="Deliver to..."
-            size="40"
-            type="text"
-            className={styles.search}></input>
-        </form>
+    <header>
+      <div className={styles['header-top']}>
+        <div className={styles['left-side']}>
+          <img src="packo-log.svg" alt="Packo Logo" className={styles.packo} />
+          <form className={styles.form}>
+            <img src="location.svg" alt="Location Icon" className={styles.icon} />
+            <input
+              placeholder="Deliver to..."
+              size="40"
+              type="text"
+              className={styles.search}></input>
+          </form>
+        </div>
+        <div className={styles['right-side']}>
+          <Kart />
+          <Button>Login or Sigin</Button>
+        </div>
       </div>
-      <div className={styles.side}>
-        <Kart />
-        <Button>Login or Sigin</Button>
-      </div>
+      {props.children}
     </header>
   );
 }
