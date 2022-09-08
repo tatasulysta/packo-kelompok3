@@ -105,12 +105,41 @@ const chickenNoodleMenus = [
     }
 ];
 
+const snackMenus = [
+    {
+        imgUrl: '/menu/snack/risoles-roti.png',
+        name: 'Risoles Roti',
+        price: 10000
+    },
+    {
+        imgUrl: '/menu/snack/pastel-kare-ayam.png',
+        name: 'Pastel Kare Ayam',
+        price: 10000
+    },
+    {
+        imgUrl: '/menu/snack/bakso-ayam-goreng.png',
+        name: 'Bakso Ayam Goreng',
+        price: 8000
+    },
+    {
+        imgUrl: '/menu/snack/siomay-ayam.png',
+        name: 'Siomay Ayam',
+        price: 10000
+    },
+    {
+        imgUrl: '/menu/snack/cakwe.png',
+        name: 'Cakwe',
+        price: 6000
+    }
+];
+
 
 const menu = {
     foodRecommendations,
     buburMenu,
     riceMenu,
-    chickenNoodleMenus
+    chickenNoodleMenus,
+    snackMenus
 }
 
 export default menu;
