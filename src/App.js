@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import Banner from './components/Banner';
+import FoodCard from './components/FoodCard';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header>
         <Banner />
       </Header>
+      <FoodCard />
       <Cart />
       <Footer />
     </>
