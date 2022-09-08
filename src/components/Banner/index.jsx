@@ -23,7 +23,7 @@ const Banner = () => {
       <Breadcrumbs />
       <Container className={styles.wrapper}>
         <Row className="d-flex justify-content-end">
-          <Col className={styles['left-wrapper']}>
+          <Col className={styles['row__left-wrapper']}>
             <h1 className={`text-4xl text-weight-bold ${styles.title}`}>Bubur Yoyong</h1>
             <div className="d-flex gap-4">
               <Badge className={styles.badge} />
