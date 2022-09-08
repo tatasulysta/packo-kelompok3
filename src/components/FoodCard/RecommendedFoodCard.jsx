@@ -9,11 +9,11 @@ function RecommendedFoodCard() {
         menu.foodRecommendations.map((food) => {
             return (
                 <Col lg={3} className='data'>
-                    <Card>
-                        <Card.Body>
+                    <Card className='recommendation'>
+                        <Card.Body className='recommendation'>
                             <Row>
                                 <Col lg={12}>
-                                    <img src={process.env.PUBLIC_URL + `/menu/food-medium.png`} alt='food-irecommendation'/>
+                                    <img src={process.env.PUBLIC_URL + food.imgUrl} className='recommendation' alt='food-irecommendation'/>
                                 </Col>
                             </Row>
                             <Row>

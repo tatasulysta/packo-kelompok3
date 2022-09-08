@@ -8,30 +8,32 @@ function FoodCard() {
     return (
         menu.buburMenu.map((bubur) => {
             return (
-                <Card>
-                    <Card.Body className='d-flex align-items-center'>
-                        <Row>
-                            <Col lg={3}>
-                                <img src={process.env.PUBLIC_URL + `/menu/food-medium.png`} alt='food-irecommendation'/>
-                            </Col>
-                            <Col lg={9}>
-                                <Row>
-                                    <Col lg={12}>
-                                        <Card.Title>{bubur.name}</Card.Title>
-                                    </Col>
-                                </Row>
-                                <Row className='justify-content-between align-items-center'>
-                                    <Col lg={9}>
-                                        <Card.Text>{bubur.price}</Card.Text>
-                                    </Col>
-                                    <Col lg={3}>
-                                        <Button className='add-food'></Button>
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Card.Body>
-                </Card>
+                <Col lg={4} className='mb-4 p-0'>
+                    <Card>
+                        <Card.Body className='p-0'>
+                            <Row>
+                                <Col lg={4}>
+                                    <img src={process.env.PUBLIC_URL + bubur.imgUrl} alt='food-irecommendation'/>
+                                </Col>
+                                <Col lg={8}>
+                                    <Row>
+                                        <Col lg={12}>
+                                            <Card.Text className='title text-base text-weight-medium'>{bubur.name}</Card.Text>
+                                        </Col>
+                                    </Row>
+                                    <Row className='justify-content-between align-items-center'>
+                                        <Col lg={9}>
+                                            <Card.Text>{bubur.price}</Card.Text>
+                                        </Col>
+                                        <Col lg={3} className='text-center'>
+                                            <Button className='add-food'></Button>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
             );
         })
     )

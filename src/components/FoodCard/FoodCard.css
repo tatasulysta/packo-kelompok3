@@ -1,21 +1,16 @@
 img {
     width: 80px;
     height: 80px;
+    border-radius: 4px;
 }
 
 .card {
     width: 389.33px;
-    height: 120px;
     padding: 16px;
 }
 
-.card-body {
-    padding: 0;
-}
-
-.card-title {
-    width: 263.33px;
-    margin-bottom: 24px;
+.card-text.title {
+    height: 40px;
 }
 
 button.add-food {
