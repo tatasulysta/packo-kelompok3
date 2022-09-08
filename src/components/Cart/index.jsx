@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Image from 'react-bootstrap/Image';
 import plus from '../../assets/u_plus.svg';
@@ -9,19 +7,15 @@ import clock from '../../assets/clock.svg';
 import cartImg from '../../assets/rectangle-2-7.png';
 
 import './Cart.css';
+import { useCart } from '../../contexts/Context';
 
 const Cart = () => {
-  const [show, setShow] = useState(false);
+  const { isCartOpen: show, setIsCartOpen: setShow } = useCart();
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
-      </Button>
-
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className="cart-title">
