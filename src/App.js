@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FoodCard from './components/FoodCard/FoodCard';
+import RecommendedFoodCard from './components/FoodCard/RecommendedFoodCard';
+import { Row } from 'react-bootstrap';
 
 function App() {
   return (
@@ -19,7 +20,16 @@ function App() {
           Learn React
         </a>
       </header>
-      <FoodCard/>
+      <main className='menu'>
+        <Row>
+          <p className='text-2xl text-weight-medium p-0 mt-5'>Recommendation</p>
+          <RecommendedFoodCard/>
+        </Row>
+        <Row>
+          <p className='text-2xl text-weight-medium p-0 mt-5'>Recommendation</p>
+          <RecommendedFoodCard/>
+        </Row>
+      </main>
     </div>
   );
 }

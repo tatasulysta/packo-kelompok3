@@ -1,22 +1,39 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
+import { Row, Col } from 'react-bootstrap';
 import './RecommendedFoodCard.css'
+import menu from '../../data/food';
 
 function RecommendedFoodCard() {
     return (
-        <Card>
-            <img src={process.env.PUBLIC_URL + `/food-medium.png`} alt='food-img'/>
-            <Card.Body>
-                <Card.Title>Food</Card.Title>
-                <div className='d-flex justify-content-between align-items-center'>
-                <Row className='my-auto'>
-                    <Card.Text>3500</Card.Text>
-                </Row>
-                    <Button className='add-food'></Button>
-                </div>
-            </Card.Body>
-        </Card>
+        menu.foodRecommendations.map((food) => {
+            return (
+                <Col lg={3} className='data'>
+                    <Card>
+                        <Card.Body>
+                            <Row>
+                                <Col lg={12}>
+                                    <img src={process.env.PUBLIC_URL + `/menu/food-medium.png`} alt='food-irecommendation'/>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col lg={12}>
+                                    <Card.Text className='text-base text-weight-medium'>{food.name}</Card.Text>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col lg={9} className='my-auto'>
+                                    <Card.Text>{food.price}</Card.Text>
+                                </Col>
+                                <Col lg={3} className='text-end'>
+                                    <Button className='add-food'></Button>
+                                </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            );
+        })
     );
 }
 
