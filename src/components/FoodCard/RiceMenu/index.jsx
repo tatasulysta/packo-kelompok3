@@ -13,7 +13,7 @@ const RiceMenu = () => {
                         <Card.Body className='p-0'>
                             <Row>
                                 <Col lg={4}>
-                                    <img src={process.env.PUBLIC_URL + rice.imgUrl} alt='rice-menu'/>
+                                    <img className='menu' src={process.env.PUBLIC_URL + rice.imgUrl} alt='rice-menu'/>
                                 </Col>
                                 <Col lg={8}>
                                     <Row>

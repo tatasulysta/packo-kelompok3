@@ -13,7 +13,7 @@ const SnackMenu = () => {
                         <Card.Body className='p-0'>
                             <Row>
                                 <Col lg={4}>
-                                    <img src={process.env.PUBLIC_URL + snack.imgUrl} alt='snack-menu'/>
+                                    <img className='menu' src={process.env.PUBLIC_URL + snack.imgUrl} alt='snack-menu'/>
                                 </Col>
                                 <Col lg={8}>
                                     <Row>

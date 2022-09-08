@@ -13,7 +13,7 @@ const PorridgeMenu = () => {
                         <Card.Body className='p-0'>
                             <Row>
                                 <Col lg={4}>
-                                    <img src={process.env.PUBLIC_URL + porridge.imgUrl} alt='porridge-menu'/>
+                                    <img className='menu' src={process.env.PUBLIC_URL + porridge.imgUrl} alt='porridge-menu'/>
                                 </Col>
                                 <Col lg={8}>
                                     <Row>

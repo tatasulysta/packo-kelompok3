@@ -13,7 +13,7 @@ function RecommendedFoodCard() {
                         <Card.Body className='recommendation'>
                             <Row>
                                 <Col lg={12}>
-                                    <img src={process.env.PUBLIC_URL + food.imgUrl} className='recommendation' alt='food-irecommendation'/>
+                                    <img className='recommendation' src={process.env.PUBLIC_URL + food.imgUrl} alt='food-irecommendation'/>
                                 </Col>
                             </Row>
                             <Row>
