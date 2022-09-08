@@ -6,6 +6,7 @@ import PorridgeMenuCard from './components/FoodCard/PorridgeMenuCard';
 import RiceMenuCard from './components/FoodCard/RiceMenuCard';
 import ChickenNoodleMenuCard from './components/FoodCard/ChickenNoodleMenuCard';
 import SnackMenuCard from './components/FoodCard/SnackMenuCard';
+import DrinkMenuCard from './components/FoodCard/DrinkMenuCard';
 import { Row } from 'react-bootstrap';
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
         <Row>
           <p className='text-2xl text-weight-medium p-0 mt-4'>Snack</p>
           <SnackMenuCard/>
+        </Row>
+        <Row>
+          <p className='text-2xl text-weight-medium p-0 mt-4'>Drink</p>
+          <DrinkMenuCard/>
         </Row>
       </main>
     </div>

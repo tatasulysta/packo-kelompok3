@@ -133,13 +133,42 @@ const snackMenus = [
     }
 ];
 
+const drinkMenus = [
+    {
+        imgUrl: '/menu/drink/es-teh.png',
+        name: 'Es Teh',
+        price: 5000
+    },
+    {
+        imgUrl: '/menu/drink/milo.png',
+        name: 'Milo',
+        price: 10000
+    },
+    {
+        imgUrl: '/menu/drink/es-jeruk.png',
+        name: 'Es Jeruk',
+        price: 7000
+    },
+    {
+        imgUrl: '/menu/drink/teh-susu.png',
+        name: 'Teh Susu',
+        price: 16000
+    },
+    {
+        imgUrl: '/menu/drink/es-kelapa.png',
+        name: 'Es Kelapa',
+        price: 12000
+    }
+];
+
 
 const menu = {
     foodRecommendations,
     buburMenu,
     riceMenu,
     chickenNoodleMenus,
-    snackMenus
+    snackMenus,
+    drinkMenus
 }
 
 export default menu;
