@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-import './FoodCard.css'
+import './RecommendedFoodCard.css'
 
-function FoodCartMenu() {
+function RecommendedFoodCard() {
     return (
         <Card>
-            <img src={process.env.PUBLIC_URL + `/food-small.png`} alt='food-img'/>
+            <img src={process.env.PUBLIC_URL + `/food-medium.png`} alt='food-img'/>
             <Card.Body>
                 <Card.Title>Food</Card.Title>
                 <div className='d-flex justify-content-between align-items-center'>
@@ -20,4 +20,4 @@ function FoodCartMenu() {
     );
 }
 
-export default FoodCartMenu;
+export default RecommendedFoodCard;
