@@ -1,0 +1,11 @@
+.kart {
+  margin: 0 24px;
+  border-color: #4b3786;
+  border-style: solid;
+  border-radius: 40px;
+  padding: 8px 20px;
+}
+
+.kart:hover {
+  cursor: pointer;
+}
