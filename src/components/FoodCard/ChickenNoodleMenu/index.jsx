@@ -15,7 +15,7 @@ const ChickenNoodleMenu = () => {
                                 <Col lg={4}>
                                     <img className='menu' src={process.env.PUBLIC_URL + chickenNoodle.imgUrl} alt='chicken-noodle-menu'/>
                                 </Col>
-                                <Col lg={8}>
+                                <Col lg={8} className='details'>
                                     <Row>
                                         <Col lg={12}>
                                             <Card.Text className='title text-base text-weight-medium'>{chickenNoodle.name}</Card.Text>

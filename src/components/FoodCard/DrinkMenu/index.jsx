@@ -16,7 +16,7 @@ const DrinkMenu = () => {
                                 <Col lg={4}>
                                     <img className='menu' src={process.env.PUBLIC_URL + drink.imgUrl} alt='drink-menu'/>
                                 </Col>
-                                <Col lg={8}>
+                                <Col lg={8} className='details'>
                                     <Row>
                                         <Col lg={12}>
                                             <Card.Text className='title text-base text-weight-medium'>{drink.name}</Card.Text>

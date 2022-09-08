@@ -13,6 +13,10 @@ img.menu {
     height: 40px;
 }
 
+.details {
+    padding-left: 0px;
+}
+
 .text-menu {
     margin-top: 36px;
 }
