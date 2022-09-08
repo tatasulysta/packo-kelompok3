@@ -1,0 +1,32 @@
+.nav--item {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  width: fit-content;
+}
+.link {
+  text-decoration: none;
+  padding:16px 24px;
+ 
+}
+.active {
+  color: var(--brand-purple);
+}
+.inactive {
+  color: var(--grey3);
+}
+.link--text {
+  display: inline-block;
+  
+}
+.active > hr {
+  border: none;
+  height: 3px;
+  background-color: var(--brand-yellow);
+  align-self: stretch;
+}
+.inactive > hr {
+  border: none;
+  height: 3px;
+  background-color: white;
+}
