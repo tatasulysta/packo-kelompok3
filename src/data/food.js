@@ -21,7 +21,7 @@ const foodRecommendations = [
     }
 ];
 
-const buburMenu = [
+const porridgeMenus = [
     {
         imgUrl: '/menu/bubur/medium/bubur-cakwe-telor-campur.png',
         name: 'Bubur Cakwe Telor Campur',
@@ -49,7 +49,7 @@ const buburMenu = [
     }
 ];
 
-const riceMenu = [
+const riceMenus = [
     {
         imgUrl: '/menu/rice/nasi-goreng-hainan.png',
         name: 'Nasi Goreng Hainan',
@@ -164,8 +164,8 @@ const drinkMenus = [
 
 const menu = {
     foodRecommendations,
-    buburMenu,
-    riceMenu,
+    porridgeMenus,
+    riceMenus,
     chickenNoodleMenus,
     snackMenus,
     drinkMenus

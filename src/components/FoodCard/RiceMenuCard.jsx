@@ -6,7 +6,7 @@ import menu from '../../data/food';
 
 function RiceMenuCard() {
     return (
-        menu.riceMenu.map((rice) => {
+        menu.riceMenus.map((rice) => {
             return (
                 <Col lg={4} className='mb-4 p-0'>
                     <Card>
