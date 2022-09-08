@@ -1,29 +1,45 @@
-
 .container {
   padding: 40px 120px;
   display: flex;
   flex-direction: column;
 }
-.container:hover>.wrapper{
+.container:hover > .wrapper {
   visibility: visible;
   opacity: 1;
   height: fit-content;
 }
-.wrapper{
+.wrapper {
   visibility: hidden;
   opacity: 0;
   height: 0;
   transition: fit-content 0.3s ease-in;
   transition: visibility 0s, opacity 0.5s linear;
 }
-.title,.rate {
+.title,
+.rate {
   margin-top: 40px;
   margin-bottom: 19px;
 }
 .badge {
   margin-bottom: 48px;
 }
-.infoWrapper{
-    width: 100%;
-    background-color: blanchedalmond;
+.infoWrapper {
+  width: 100%;
+  background-color: blanchedalmond;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    visibility: visible;
+    opacity: 1;
+    height: fit-content;
+    margin:10px;
+  }
+  .container {
+    padding: 40px 20px;
+  }
+ 
+  .left-wrapper>div{
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
 }
