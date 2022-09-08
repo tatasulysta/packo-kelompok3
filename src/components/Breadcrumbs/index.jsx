@@ -33,7 +33,7 @@ const Breadcrumbs = () => {
               {isLastIndex(index) ? (
                 <Link
                   to={data.link}
-                  className={`text-xs text-weight-medium ${styles.link} ${styles.lastItem}`}>
+                  className={`text-xs text-weight-normal ${styles.link} ${styles.lastItem}`}>
                   {data.name}
                 </Link>
               ) : (

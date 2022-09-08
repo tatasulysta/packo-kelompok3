@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './styles.module.css';
 import { AiFillStar } from 'react-icons/ai';
 
-const Rating = () => {
+const Rating = (props) => {
   const data = {
     score: 4.8,
     people: '3k+'
   };
   return (
-    <div className={styles.container}>
+    <div className={`${props.className} ${styles.container}`}>
       <div className={styles.wrapper}>
         <div className={styles.upperWrapper}>
           <AiFillStar className={styles.icon} />

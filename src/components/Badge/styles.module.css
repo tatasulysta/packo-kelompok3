@@ -1,0 +1,9 @@
+.container{
+    background-color: var(--brand-purple);
+    color: white;
+    padding:4px 8px;
+    display: flex;
+    width: fit-content;
+    gap: 5px;
+    border-radius: 40px;
+}
