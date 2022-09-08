@@ -1,3 +1,7 @@
+hr {
+  margin: 0;
+}
+
 .nav--item {
   list-style-type: none;
   text-align: center;
