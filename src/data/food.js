@@ -52,28 +52,28 @@ const buburMenu = [
 const riceMenu = [
     {
         imgUrl: '/menu/rice/nasi-goreng-hainan.png',
-        name: 'Bubur Cakwe Telor Campur',
+        name: 'Nasi Goreng Hainan',
         price: 28000
     },
     {
         imgUrl: '/menu/rice/nasi-bakmoy.png',
-        name: 'Bubur Telor Sarang Kepo',
+        name: 'Nasi Bakmoy',
         price: 28000
     },
     {
         imgUrl: '/menu/rice/nasi-gongso.png',
-        name: 'Bubur Sarang Telor Setengah Matang',
-        price: 35000
+        name: 'Nasi Gongso',
+        price: 32000
     },
     {
         imgUrl: '/menu/rice/nasi-hainan.png',
-        name: 'Bubur Sarang Telor Setengah Matang',
+        name: 'Nasi Hainan',
         price: 28000
     },
     {
         imgUrl: '/menu/rice/nasi-goreng-appa-yip.png',
-        name: 'Bubur Cakwe Telor Campur',
-        price: 28000
+        name: 'Nasi Goreng App Yip',
+        price: 31000
     }
 ];
 

@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PorridgeMenuCard from './components/FoodCard/PorridgeMenuCard';
 import RecommendedFoodCard from './components/FoodCard/RecommendedFoodCard';
+import PorridgeMenuCard from './components/FoodCard/PorridgeMenuCard';
+import RiceMenuCard from './components/FoodCard/RiceMenuCard';
 import { Row } from 'react-bootstrap';
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
         <Row>
           <p className='text-2xl text-weight-medium p-0 mt-5'>Bubur</p>
           <PorridgeMenuCard/>
+        </Row>
+        <Row>
+          <p className='text-2xl text-weight-medium p-0 mt-5'>Nasi</p>
+          <RiceMenuCard/>
         </Row>
       </main>
     </div>
