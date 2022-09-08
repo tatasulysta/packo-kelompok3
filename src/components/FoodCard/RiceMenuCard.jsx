@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import './FoodMenuCard.css'
 import menu from '../../data/food';
 
-function FoodCard() {
+function RiceMenuCard() {
     return (
         menu.buburMenu.map((bubur) => {
             return (
@@ -13,7 +13,7 @@ function FoodCard() {
                         <Card.Body className='p-0'>
                             <Row>
                                 <Col lg={4}>
-                                    <img src={process.env.PUBLIC_URL + bubur.imgUrl} alt='food-irecommendation'/>
+                                    <img src={process.env.PUBLIC_URL + bubur.imgUrl} alt='rice-menu'/>
                                 </Col>
                                 <Col lg={8}>
                                     <Row>
@@ -39,4 +39,4 @@ function FoodCard() {
     )
 }
 
-export default FoodCard;
+export default RiceMenuCard;

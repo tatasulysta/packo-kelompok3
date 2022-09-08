@@ -13,7 +13,7 @@ function PorridgeMenuCard() {
                         <Card.Body className='p-0'>
                             <Row>
                                 <Col lg={4}>
-                                    <img src={process.env.PUBLIC_URL + bubur.imgUrl} alt='food-irecommendation'/>
+                                    <img src={process.env.PUBLIC_URL + bubur.imgUrl} alt='porridge-menu'/>
                                 </Col>
                                 <Col lg={8}>
                                     <Row>
