@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    min-width: 100%;
+    overflow-x:scroll ;
+}
+.navbar>ul{
+    display: flex;
+    padding:0px;
+    
+}
+.navbar::-webkit-scrollbar{
+    display: none;
+}
