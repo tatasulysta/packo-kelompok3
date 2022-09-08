@@ -1,29 +1,30 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap';
-import './FoodMenuCard.css'
-import menu from '../../data/food';
+import '../style.css'
+import menu from '../../../data/food';
 
-function PorridgeMenuCard() {
+
+const DrinkMenu = () => {
     return (
-        menu.porridgeMenus.map((porridge) => {
+        menu.drinkMenus.map((drink) => {
             return (
                 <Col lg={4} className='mb-4 p-0'>
                     <Card>
                         <Card.Body className='p-0'>
                             <Row>
                                 <Col lg={4}>
-                                    <img src={process.env.PUBLIC_URL + porridge.imgUrl} alt='porridge-menu'/>
+                                    <img src={process.env.PUBLIC_URL + drink.imgUrl} alt='drink-menu'/>
                                 </Col>
                                 <Col lg={8}>
                                     <Row>
                                         <Col lg={12}>
-                                            <Card.Text className='title text-base text-weight-medium'>{porridge.name}</Card.Text>
+                                            <Card.Text className='title text-base text-weight-medium'>{drink.name}</Card.Text>
                                         </Col>
                                     </Row>
                                     <Row className='justify-content-between align-items-center'>
                                         <Col lg={9}>
-                                            <Card.Text>{porridge.price}</Card.Text>
+                                            <Card.Text>{drink.price}</Card.Text>
                                         </Col>
                                         <Col lg={3} className='text-center'>
                                             <Button className='add-food'></Button>
@@ -39,4 +40,4 @@ function PorridgeMenuCard() {
     )
 }
 
-export default PorridgeMenuCard;
+export default DrinkMenu;

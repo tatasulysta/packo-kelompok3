@@ -1,10 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap';
-import './FoodMenuCard.css'
-import menu from '../../data/food';
+import '../style.css'
+import menu from '../../../data/food';
 
-function RiceMenuCard() {
+const RiceMenu = () => {
     return (
         menu.riceMenus.map((rice) => {
             return (
@@ -39,4 +39,4 @@ function RiceMenuCard() {
     )
 }
 
-export default RiceMenuCard;
+export default RiceMenu;

@@ -23,7 +23,7 @@ img.recommendation {
 }
 
 button.add-food {
-    background: url('../../../public/menu/icon-add.png');
+    background: url('../../../../public/menu/icon-add.png');
     width: 40px;
     height: 40px;
     border: none;

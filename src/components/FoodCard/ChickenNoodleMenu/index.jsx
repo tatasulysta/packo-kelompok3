@@ -1,10 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap';
-import './FoodMenuCard.css'
-import menu from '../../data/food';
+import '../style.css'
+import menu from '../../../data/food';
 
-function ChickenNoodleMenuCard() {
+const ChickenNoodleMenu = () => {
     return (
         menu.chickenNoodleMenus.map((chickenNoodle) => {
             return (
@@ -39,4 +39,4 @@ function ChickenNoodleMenuCard() {
     )
 }
 
-export default ChickenNoodleMenuCard;
+export default ChickenNoodleMenu;
