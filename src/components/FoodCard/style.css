@@ -13,6 +13,10 @@ img {
     height: 40px;
 }
 
+.text-menu {
+    margin-top: 36px;
+}
+
 button.add-food {
     background: url('../../../public/menu/icon-add.png');
     width: 40px;
