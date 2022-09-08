@@ -8,6 +8,8 @@ import logo from '../../assets/packo-logo-white.png';
 import google from '../../assets/google-play-white.png';
 import apple from '../../assets/app-store-white.png';
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer>
@@ -26,8 +28,16 @@ const Footer = () => {
 
             <ul className={'list-unstyled d-flex gap-4 text-xs'}>
               <li>© 2022 Packo</li>
-              <li>Privacy policy</li>
-              <li>Terms of service</li>
+              <li>
+                <Link to="/privacy" className={styles['footer-link']}>
+                  Privacy policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/term" className={styles['footer-link']}>
+                  Terms of service
+                </Link>
+              </li>
             </ul>
           </Col>
           <Col className="d-flex flex-column align-items-md-end align-items-start justify-content-center mt-md-0 mt-4">

@@ -22,10 +22,20 @@ footer {
   width: 198.59px;
   height: auto;
   margin-bottom: 17px;
+  cursor: pointer;
 }
 
 .footer-app:last-child {
   margin-bottom: 0;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--brand-yellow);
 }
 
 .mb-56 {
