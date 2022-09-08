@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap';
-import './FoodCard.css'
+import './FoodMenuCard.css'
 import menu from '../../data/food';
 
 function FoodCard() {
