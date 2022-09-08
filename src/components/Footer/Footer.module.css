@@ -1,0 +1,33 @@
+footer {
+  background-color: var(--brand-purple);
+  padding: 50px 0; /* 50px 120px */
+}
+
+.footer-text-white {
+  color: #fff;
+}
+
+.footer-width {
+  /* max-width: 1200px; when need spesific width */
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 93.53px;
+  height: auto;
+  margin-bottom: 56px;
+}
+
+.footer-app {
+  width: 198.59px;
+  height: auto;
+  margin-bottom: 17px;
+}
+
+.footer-app:last-child {
+  margin-bottom: 0;
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
