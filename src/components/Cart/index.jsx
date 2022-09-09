@@ -7,7 +7,7 @@ import clock from '../../assets/clock.svg';
 import cartImg from '../../assets/rectangle-2-7.png';
 
 import './Cart.css';
-import { useCart } from '../../contexts/Context';
+import { useCart } from '../../contexts/ContextProvider';
 
 const Cart = () => {
   const { isCartOpen: show, setIsCartOpen: setShow } = useCart();
