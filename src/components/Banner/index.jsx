@@ -26,7 +26,7 @@ const Banner = () => {
           <Col className={styles['row__left-wrapper']}>
             <h1 className={`text-4xl text-weight-bold ${styles.title}`}>Bubur Yoyong</h1>
             <div className="d-flex gap-4">
-              <Badge className={styles.badge} />
+              <Badge />
               <span className="d-inline-flex gap-3">
                 <TimeInformation open="7:00" close="15:00" />
                 <FiChevronDown
@@ -40,12 +40,10 @@ const Banner = () => {
               </p>
             </div>
           </Col>
-
           <Rating className={styles.rate} />
         </Row>
       </Container>
-      {/* )} */}
-      <Navbar />
+      <Navbar className={styles.navbar} />
     </div>
   );
 };
