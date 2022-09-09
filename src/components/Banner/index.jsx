@@ -10,11 +10,7 @@ import Badge from '../Badge';
 import TimeInformation from '../TimeInformation';
 import { Col, Container, Row } from 'react-bootstrap';
 
-const Banner = () => {
-  const [hover, setHover] = useState(false);
-  useEffect(() => {
-    console.log(hover);
-  }, [hover]);
+const Banner = ({ setHover }) => {
   return (
     <div
       className={styles.container}

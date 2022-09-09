@@ -2,6 +2,7 @@
   padding: 40px 120px 0 120px;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .container:hover > .wrapper {
   visibility: visible;
