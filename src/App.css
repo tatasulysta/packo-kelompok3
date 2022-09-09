@@ -61,3 +61,6 @@ main.menu {
   margin-right: 120px;
   margin-left: 120px;
 }
+.menu--container{
+  background-color: var(--grey6);
+}

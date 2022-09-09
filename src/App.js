@@ -12,8 +12,10 @@ function App() {
       <Header>
         <Banner />
       </Header>
-      <FoodCard />
-      <Cart />
+      <div className="menu--container">
+        <FoodCard />
+      </div>
+
       <Footer />
     </>
   );
