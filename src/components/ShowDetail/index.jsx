@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { Row, Col } from 'react-bootstrap';
-import styles from './styles.module.css';
 
 function ShowDetail(props) {
   console.log(props);
