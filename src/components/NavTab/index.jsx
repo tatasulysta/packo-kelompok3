@@ -8,7 +8,6 @@ const NavTab = (props) => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(location.hash);
     if (location.hash === '' && link === '#') {
       setActive(true);
       window.scrollTo(0, 0);
