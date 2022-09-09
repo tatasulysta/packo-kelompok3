@@ -54,6 +54,10 @@
   align-items: center;
 }
 
+.cart-item-icon:hover {
+  background-color: var(--grey5);
+}
+
 .cart-item-detail-name-img {
   width: 56px;
   height: 56px;

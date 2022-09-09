@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import { useCart } from '../../../contexts/Context';
+import { useCart } from '../../../contexts/ContextProvider';
 
 function Kart(props) {
   const { setIsCartOpen: setShow } = useCart();
