@@ -4,11 +4,11 @@ import { Row, Col } from 'react-bootstrap';
 import '../style.css';
 import menu from '../../../data/food';
 
-const RiceMenu = () => {
+const RiceMenu = (props) => {
   return menu.riceMenus.map((rice) => {
     return (
-      <Col lg={4} className="mb-4 p-0" key={rice.id} id="chicken--noodle">
-        <Card>
+      <Col lg={4} className="mb-4 p-0">
+        <Card onClick={() => props.onClick(rice)}>
           <Card.Body className="p-0">
             <Row>
               <Col lg={4}>

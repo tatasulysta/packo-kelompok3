@@ -4,11 +4,11 @@ import { Row, Col } from 'react-bootstrap';
 import './style.css';
 import menu from '../../../data/food';
 
-function RecommendedFoodCard() {
+function RecommendedFoodCard(props) {
   return menu.foodRecommendations.map((food) => {
     return (
-      <Col lg={3} className="data" key={food.id} id="porridge">
-        <Card className="recommendation">
+      <Col lg={3} className="data">
+        <Card className="recommendation" onClick={() => props.onClick(food)}>
           <Card.Body className="recommendation">
             <Row>
               <Col lg={12}>

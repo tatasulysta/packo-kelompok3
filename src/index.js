@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import MenuContextProvider from './contexts/menuContext';
 import ContextProvider from './contexts/ContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +12,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ContextProvider>
-        <App />
+        <MenuContextProvider>
+          <App />
+        </MenuContextProvider>
       </ContextProvider>
     </BrowserRouter>
   </React.StrictMode>
