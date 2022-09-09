@@ -20,8 +20,8 @@ const Banner = () => {
       className={styles.container}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
-      <Breadcrumbs />
       <Container className={styles.wrapper}>
+        <Breadcrumbs />
         <Row className="d-flex justify-content-end">
           <Col className={styles['row__left-wrapper']}>
             <h1 className={`text-4xl text-weight-bold ${styles.title}`}>Bubur Yoyong</h1>
@@ -43,7 +43,7 @@ const Banner = () => {
           <Rating className={styles.rate} />
         </Row>
       </Container>
-      <Navbar className={styles.navbar} />
+      <Navbar />
     </div>
   );
 };
