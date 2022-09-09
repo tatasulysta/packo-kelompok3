@@ -61,9 +61,10 @@ main.menu {
   margin-right: 120px;
   margin-left: 120px;
 }
-.menu--container{
+.menu-container{
   background-color: var(--grey6);
   padding-bottom: 60px;
+
 }
 .hover--margin{
   margin-top: 400px;
