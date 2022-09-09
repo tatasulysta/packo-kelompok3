@@ -2,17 +2,15 @@
     display: flex;
     flex-direction:row ;
     flex-wrap: wrap;
+    min-width: 100%;
+    overflow-x:scroll ;
+    height: 56px;
 }
 .navbar>ul{
     display: flex;
+    padding:0px;
     
 }
-@media only screen and (max-width:768px) {
-    .navbar{
-        overflow: hidden;
-    }
-    .navbar>ul{
-      overflow-x:scroll ;
-      
-    }
-  }
+.navbar::-webkit-scrollbar{
+    display: none;
+}

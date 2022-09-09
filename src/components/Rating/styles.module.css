@@ -1,0 +1,22 @@
+.container{
+    border-radius: 8px;
+    background-color: var(--grey6);
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+}
+.container p{
+    margin: 0;
+}
+.wrapper_upper-wrapper{
+    display: flex;
+    gap:8px;
+}
+.wrapper{
+    padding: 18px 22.5px;
+}
+.icon{
+    font-size: 32px;
+    color: var(--brand-yellow);
+}

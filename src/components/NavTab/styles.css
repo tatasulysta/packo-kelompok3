@@ -1,13 +1,17 @@
+hr {
+  margin: 0;
+}
 .nav--item {
   list-style-type: none;
   text-align: center;
   display: flex;
   width: fit-content;
 }
+.nav--item a{
+  padding-left: 0;
+}
 .link {
   text-decoration: none;
-  padding:16px 24px;
- 
 }
 .active {
   color: var(--brand-purple);
@@ -17,7 +21,7 @@
 }
 .link--text {
   display: inline-block;
-  
+  padding:16px 24px 12px 24px;
 }
 .active > hr {
   border: none;
@@ -31,8 +35,8 @@
   background-color: white;
 }
 
-@media screen and (min-width:375px) {
-  .nav--item{
-    flex-direction: column;
+@media screen and (max-width:688px) {
+  .link{
+    font-size: 13px !important;
   }
 }
