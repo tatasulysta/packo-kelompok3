@@ -2,7 +2,7 @@ export const navItem = [
   {
     id: 1,
     name: 'Recommended',
-    link: '/'
+    link: '#'
   },
   {
     id: 2,

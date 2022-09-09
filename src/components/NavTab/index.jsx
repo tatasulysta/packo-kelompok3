@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './styles.css';
 
 const NavTab = (props) => {
@@ -8,8 +8,14 @@ const NavTab = (props) => {
   const location = useLocation();
 
   useEffect(() => {
-    link === location.pathname ? setActive(true) : setActive(false);
-  }, [location.pathname, link]);
+    console.log(location.hash);
+    if (location.hash === '' && link === '#') {
+      setActive(true);
+      window.scrollTo(0, 0);
+    } else {
+      link === location.hash ? setActive(true) : setActive(false);
+    }
+  }, [location, link]);
 
   return (
     <li className="nav--item" key={id}>
