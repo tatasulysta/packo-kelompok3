@@ -4,9 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 import styles from './Footer.module.css';
-import logo from '../../assets/packo-logo-white.png';
-import google from '../../assets/google-play-white.png';
-import apple from '../../assets/app-store-white.png';
 
 import { Link } from 'react-router-dom';
 
@@ -17,7 +14,7 @@ const Footer = () => {
         <Row className={styles['footer-width']}>
           <Col md={8}>
             <div className={styles['footer-logo']}>
-              <Image src={logo} alt="packo-logo" fluid />
+              <Image src="/images/packo-logo-white.png" alt="packo-logo" fluid />
             </div>
             <p className="text-3xl text-weight-medium mb-3">
               Pemadam kelaparan ketika kamu mager keluar rumah
@@ -44,10 +41,10 @@ const Footer = () => {
           </Col>
           <Col className="d-flex flex-column align-items-md-end align-items-start justify-content-center mt-md-0 mt-4">
             <div className={styles['footer-app']}>
-              <Image src={google} alt="google" fluid />
+              <Image src="/images/google-play-white.png" alt="google" fluid />
             </div>
             <div className={`${styles['footer-app']}`}>
-              <Image src={apple} alt="apple" fluid />
+              <Image src="/images/app-store-white.png" alt="apple" fluid />
             </div>
           </Col>
         </Row>

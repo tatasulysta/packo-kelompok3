@@ -10,23 +10,19 @@ import Badge from '../Badge';
 import TimeInformation from '../TimeInformation';
 import { Col, Container, Row } from 'react-bootstrap';
 
-const Banner = () => {
-  const [hover, setHover] = useState(false);
-  useEffect(() => {
-    console.log(hover);
-  }, [hover]);
+const Banner = ({ setHover }) => {
   return (
     <div
       className={styles.container}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
-      <Breadcrumbs />
       <Container className={styles.wrapper}>
+        <Breadcrumbs />
         <Row className="d-flex justify-content-end">
           <Col className={styles['row__left-wrapper']}>
             <h1 className={`text-4xl text-weight-bold ${styles.title}`}>Bubur Yoyong</h1>
             <div className="d-flex gap-4">
-              <Badge className={styles.badge} />
+              <Badge />
               <span className="d-inline-flex gap-3">
                 <TimeInformation open="7:00" close="15:00" />
                 <FiChevronDown
@@ -40,11 +36,9 @@ const Banner = () => {
               </p>
             </div>
           </Col>
-
           <Rating className={styles.rate} />
         </Row>
       </Container>
-      {/* )} */}
       <Navbar />
     </div>
   );

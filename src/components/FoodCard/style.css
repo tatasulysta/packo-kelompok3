@@ -1,4 +1,4 @@
-img {
+img.menu {
     width: 80px;
     height: 80px;
     border-radius: 4px;
@@ -11,6 +11,14 @@ img {
 
 .card-text.title {
     height: 40px;
+}
+
+.details {
+    padding-left: 0px;
+}
+
+.text-menu {
+    margin-top: 36px;
 }
 
 button.add-food {

@@ -1,21 +1,28 @@
+.header {
+  position: fixed;
+  width: 100%;
+  min-height: auto;
+  top: 0;
+  z-index: 12;
+}
+
 .header-top {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #f2f2f2;
+  padding: 22px 40px;
 }
 
 .left-side {
   display: flex;
   align-items: center;
-  padding: 16px 40px;
 }
 
 .right-side {
   display: flex;
   align-items: center;
-  padding: 16px 20px;
 }
 
 .packo {
@@ -29,8 +36,8 @@
 .form {
   display: flex;
   width: 100%;
+  margin-left: 40px;
   align-items: center;
-  margin: 0 4%;
   border-radius: 20px;
   border-color: black;
   border-width: thin;
@@ -52,9 +59,10 @@
   }
   .header-top {
     flex-direction: column;
+    padding: 11px 20px;
   }
   .form {
-    margin: 20px 0;
+    margin: 16px 0;
   }
   .form input {
     width: 100%;

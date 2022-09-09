@@ -1,4 +1,3 @@
-'use strict';
 import React from 'react';
 import styles from './styles.module.css';
 import Button from '../UI/Button';
@@ -6,7 +5,7 @@ import Kart from '../UI/Kart';
 
 function Header(props) {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles['header-top']}>
         <div className={styles['left-side']}>
           <img src="packo-log.svg" alt="Packo Logo" className={styles.packo} />
@@ -14,7 +13,7 @@ function Header(props) {
             <img src="location.svg" alt="Location Icon" className={styles.icon} />
             <input
               placeholder="Deliver to..."
-              size="40"
+              size="30"
               type="text"
               className={styles.search}></input>
           </form>

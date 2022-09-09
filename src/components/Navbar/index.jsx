@@ -1,9 +1,9 @@
 import React from 'react';
-import { navItem } from '../../utils/navItem';
+import { navItem } from '../../data/navItem';
 import NavTab from '../NavTab';
 import styles from './styles.module.css';
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <ul>

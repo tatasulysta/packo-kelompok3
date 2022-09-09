@@ -10,27 +10,27 @@ const FoodCard = () => {
     return (
         <main className='menu'>
         <Row>
-            <p className='text-2xl text-weight-medium p-0 mt-5'>Recommendation</p>
+            <p className='text-2xl text-weight-medium p-0 text-menu'>Recommendation</p>
             <RecommendedMenu />
         </Row>
         <Row>
-            <p className='text-2xl text-weight-medium p-0 mt-5'>Bubur</p>
+            <p className='text-2xl text-weight-medium p-0 text-menu'>Bubur</p>
             <PorridgeMenu />
         </Row>
         <Row>
-            <p className='text-2xl text-weight-medium p-0 mt-4'>Nasi</p>
+            <p className='text-2xl text-weight-medium p-0 text-menu'>Nasi</p>
             <RiceMenu />
         </Row>
         <Row>
-            <p className='text-2xl text-weight-medium p-0 mt-4'>Mi Ayam</p>
+            <p className='text-2xl text-weight-medium p-0 text-menu'>Mi Ayam</p>
             <ChickenNoodleMenu />
         </Row>
         <Row>
-            <p className='text-2xl text-weight-medium p-0 mt-4'>Snack</p>
+            <p className='text-2xl text-weight-medium p-0 text-menu'>Snack</p>
             <SnackMenu />
         </Row>
         <Row>
-            <p className='text-2xl text-weight-medium p-0 mt-4'>Drink</p>
+            <p className='text-2xl text-weight-medium p-0 text-menu'>Drink</p>
             <DrinkMenu/>
         </Row>
     </main>
