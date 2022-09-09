@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import './styles.css';
 
 const NavTab = (props) => {
-  const { name, link } = props.data;
+  const { id, name, link } = props.data;
   const [active, setActive] = useState(false);
   const location = useLocation();
 
@@ -12,7 +12,7 @@ const NavTab = (props) => {
   }, [location.pathname, link]);
 
   return (
-    <li className="nav--item">
+    <li className="nav--item" key={id}>
       <NavLink
         to={link}
         className={`link text-base ${

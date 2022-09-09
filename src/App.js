@@ -1,16 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
 import Header from './components/Header';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Cart from './components/Cart';
+import Banner from './components/Banner';
+import FoodCard from './components/FoodCard';
 
 function App() {
   return (
     <>
       <Header>
-        <Navbar />
+        <Banner />
       </Header>
+      <FoodCard />
+      <Cart />
       <Footer />
     </>
   );
