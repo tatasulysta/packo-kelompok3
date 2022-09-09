@@ -7,7 +7,7 @@ import menu from '../../../data/food';
 const PorridgeMenu = (props) => {
   return menu.porridgeMenus.map((porridge) => {
     return (
-      <Col lg={4} className="mb-4 p-0">
+      <Col lg={4} className="mb-4 p-0" id="rice">
         <Card onClick={() => props.onClick(porridge)}>
           <Card.Body className="p-0">
             <Row>
