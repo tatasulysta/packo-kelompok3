@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     min-width: 100%;
     overflow-x:scroll ;
-    height: 56px;
+    height: 56px
 }
 .navbar>ul{
     display: flex;

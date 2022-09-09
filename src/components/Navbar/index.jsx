@@ -1,5 +1,5 @@
 import React from 'react';
-import { navItem } from '../../utils/navItem';
+import { navItem } from '../../data/navItem';
 import NavTab from '../NavTab';
 import styles from './styles.module.css';
 

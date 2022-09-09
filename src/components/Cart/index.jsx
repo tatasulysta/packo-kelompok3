@@ -1,13 +1,9 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Image from 'react-bootstrap/Image';
-import plus from '../../assets/u_plus.svg';
-import minus from '../../assets/u_minus.svg';
-import clock from '../../assets/clock.svg';
-
-import cartImg from '../../assets/rectangle-2-7.png';
 
 import './Cart.css';
-import { useCart } from '../../contexts/Context';
+import { useCart } from '../../contexts/ContextProvider';
+import CartItem from './CartItem';
 
 const Cart = () => {
   const { isCartOpen: show, setIsCartOpen: setShow } = useCart();
@@ -22,7 +18,7 @@ const Cart = () => {
             <p className="text-xl text-weight-medium mb-1">Keranjang</p>
             <div className="text-sm cart-time">
               <div className="cart-time-icon">
-                <Image src={clock} alt="time" />
+                <Image src="/images/clock.svg" alt="time" />
               </div>
               Delivery time: 30 min (3.2 km away)
             </div>
@@ -30,32 +26,7 @@ const Cart = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="cart-items">
-            <div className="cart-item">
-              <p className="text-xl text-weight-medium">Bubur Yoyong</p>
-              <div className="cart-item-detail d-flex align-items-center justify-content-between">
-                <div className="cart-item-detail-count d-flex align-items-center gap-3">
-                  <button className="cart-item-icon border-0">
-                    <Image src={minus} alt="decrement" />
-                  </button>
-                  <div className="text-lg text-weight-medium">1</div>
-                  <button className="cart-item-icon border-0">
-                    <Image src={plus} alt="increment" />
-                  </button>
-                </div>
-
-                <div className="cart-item-detail-name d-flex align-items-center">
-                  <div className="cart-item-detail-name-img">
-                    <Image src={cartImg} alt="item" className="img-fluid" />
-                  </div>
-                  <div className="text-sm text-weight-medium">
-                    Bubur Sarang Telor Setengah Matang
-                  </div>
-                </div>
-                <div className="text-sm cart-item-detail-price">
-                  <div>28.000</div>
-                </div>
-              </div>
-            </div>
+            <CartItem />
             <div className="subtotal p-24 text-sm d-flex flex-column gap-2">
               <div className="d-flex justify-content-between">
                 <div>Subtotal</div>
