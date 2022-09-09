@@ -14,15 +14,14 @@
   height: 0;
   transition: fit-content 0.3s ease-in;
   transition: visibility  linear, opacity 0.5s linear;
-
 }
 .title,
 .rate {
   margin-top: 40px;
   margin-bottom: 19px;
 }
-.navbar{
-  margin-top: 48px;
+.rate{
+  margin-bottom: 48px;
 }
 
 
