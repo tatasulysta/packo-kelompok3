@@ -1,9 +1,9 @@
 .kart {
-  margin: 0 24px;
   border-color: #4b3786;
   border-style: solid;
   border-radius: 40px;
-  padding: 8px 20px;
+  margin: 0 24px;
+  padding: 10px 16px;
 }
 
 .kart:hover {
