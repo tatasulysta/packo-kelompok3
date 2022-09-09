@@ -7,7 +7,7 @@ import menu from '../../../data/food';
 const SnackMenu = () => {
   return menu.snackMenus.map((snack) => {
     return (
-      <Col lg={4} className="mb-4 p-0" key={snack.id}>
+      <Col lg={4} className="mb-4 p-0" key={snack.id} id="drink">
         <Card>
           <Card.Body className="p-0">
             <Row>

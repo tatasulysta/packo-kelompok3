@@ -7,7 +7,7 @@ import menu from '../../../data/food';
 function RecommendedFoodCard() {
   return menu.foodRecommendations.map((food) => {
     return (
-      <Col lg={3} className="data" key={food.id}>
+      <Col lg={3} className="data" key={food.id} id="porridge">
         <Card className="recommendation">
           <Card.Body className="recommendation">
             <Row>

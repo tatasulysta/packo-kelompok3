@@ -13,14 +13,14 @@ const NavTab = (props) => {
 
   return (
     <li className="nav--item" key={id}>
-      <NavLink
-        to={link}
+      <a
+        href={link}
         className={`link text-base ${
           active ? `active text-weight-medium` : `inactive text-weight-regular`
         }`}>
         <span className="link--text">{name}</span>
         <hr />
-      </NavLink>
+      </a>
     </li>
   );
 };

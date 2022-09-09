@@ -7,26 +7,26 @@ export const navItem = [
   {
     id: 2,
     name: 'Bubur',
-    link: '/bubur'
+    link: '#porridge'
   },
   {
     id: 3,
     name: 'Nasi',
-    link: '/nasi'
+    link: '#rice'
   },
   {
     id: 4,
     name: 'Mi Ayam',
-    link: '/mi-ayam'
+    link: '#chicken--noodle'
   },
   {
     id: 5,
     name: 'Snack',
-    link: '/snack'
+    link: '#snack'
   },
   {
     id: 6,
     name: 'Minuman',
-    link: '/minuman'
+    link: '#drink'
   }
 ];
